@@ -64,7 +64,7 @@
                     $stmt->execute([':id' => $id]);
                     $user = $stmt->fetch(PDO::FETCH_OBJ);
                 ?>
-                <form action="edit.php" class="card bg-dark" method="post">
+                <form action="edit.php?id=<?php echo $id ?>" class="card bg-dark" method="post">
                     <h1 class="text-white">Add Data</h1>
                     <div class="form-group">
                         <label class="text-white" for="name">Name</label>
