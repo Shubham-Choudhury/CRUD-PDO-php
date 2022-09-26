@@ -22,7 +22,7 @@
         $stmt = $pdo->prepare($sql);
         $stmt->execute([':name' => $name, ':email' => $email, ':address' => $address, ':id' => $id]);
 
-        // header('Location: index.php');
+        header('Location: index.php');
     }
 
 
