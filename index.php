@@ -48,8 +48,8 @@
                             <td><?php echo $user->email; ?></td>
                             <td><?php echo $user->address; ?></td>
                             <td>
-                                <a href="edit.php?id=<?php echo htmlspecialchars($user->id); ?>" class="btn btn-warning">Edit</a>
-                                <a href="delete.php?id=<?php echo $user->id; ?>" class="btn btn-danger">Delete</a>
+                                <a href="edit.php?id=<?php echo htmlspecialchars($user->id); ?>" class="btn btn-warning mb-2">Edit</a>
+                                <a href="delete.php?id=<?php echo $user->id; ?>" class="btn btn-danger mb-2">Delete</a>
                             </td>
                         </tr>
                         <?php endforeach; ?>
